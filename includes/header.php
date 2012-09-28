@@ -20,10 +20,9 @@
 		<link rel="shortcut icon" href="images/favicon.png">
 	</head>
 	<body data-section="" data-step="">
-		<div id="pageWrapper">
+		<div id="pageWrapper" class="<?php if(isset($bodyClass)) echo $bodyClass; ?>">
 			
 			<header>
-
 				<h1></h1>
 				<form role="search" action="#" method="get"></form>
 			</header>

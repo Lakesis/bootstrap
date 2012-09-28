@@ -1,4 +1,78 @@
 /* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+audio:not([controls]) {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+/* =============================================================================
+   General
+   ========================================================================== */
+html, body {margin: 0; padding: 0;}
+   
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+	list-style: none;
+    list-style-image: none;
+}
+
+
+/* =============================================================================
+   Utility 
+   ========================================================================== */
+   
+ /*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+.clear {clear: both}
+
+/* =============================================================================
    LESS Mixins
    ========================================================================== */
    
@@ -50,58 +124,16 @@
 /* =============================================================================
    LESS variables
    ========================================================================== */
+   
 	/* Color palette */
 	@images: "../images/";
-/* =============================================================================
-   HTML5 display definitions
-   ========================================================================== */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section,
-summary {
-    display: block;
-}
-
-audio,
-canvas,
-video {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
-}
-
-audio:not([controls]) {
-    display: none;
-}
-
-[hidden] {
-    display: none;
-}
-
-/* =============================================================================
-   General
-   ========================================================================== */
-html, body {margin: 0; padding: 0;}
-   
-ul,
-ol {
-    margin: 0;
-    padding: 0;
-	list-style: none;
-    list-style-image: none;
-}
+	
 
 /* ==========================================================================
    Typography
    ========================================================================== */
+
+body {font: normal 100% Helvetica, Arial, sans-serif} 
 
 /*
  * Addresses font sizes and margins set differently in IE6/7.
@@ -139,31 +171,6 @@ h6 {
 }
 
 
-/* =============================================================================
-   Utility 
-   ========================================================================== */
-   
- /*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: "";
-    display: table;
-}
-.clearfix:after {
-    clear: both;
-}
-.clearfix {
-    *zoom: 1;
-}
-.clear {clear: both}
 
 /* =============================================================================
    Main 

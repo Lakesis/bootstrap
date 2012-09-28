@@ -1,3 +1,4 @@
+<?php $bodyClass=""; ?>
 <?php include 'includes/header.php'; ?>
 <?php include 'includes/mainNav.php'; ?>
 			<div id="contentWrapper">
